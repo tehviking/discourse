@@ -28,6 +28,7 @@ gem 'fastimage'
 gem 'fog', require: false
 gem 'has_ip_address'
 gem 'hiredis'
+gem 'dotenv'
 
 gem 'email_reply_parser'
 
