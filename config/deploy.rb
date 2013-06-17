@@ -32,6 +32,8 @@ namespace :deploy do
   desc "Symlink shared configs and folders on each release."
   task :symlink_shared do
     run "ln -nfs #{shared_path}/.env #{release_path}/.env"
+    run "ln -nfs #{shared_path}/database.yml #{release_path}/config/database.yml"
+    run "ln -nfs #{shared_path}/redis.yml #{release_path}/config/redis.yml"
   end
 
   # Tasks to start/stop/restart thin
