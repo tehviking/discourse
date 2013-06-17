@@ -29,6 +29,8 @@ gem 'fog', require: false
 gem 'has_ip_address'
 gem 'hiredis'
 gem 'dotenv'
+gem 'capistrano'
+gem 'rvm-capistrano'
 
 gem 'email_reply_parser'
 
