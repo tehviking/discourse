@@ -83,9 +83,9 @@ namespace :db do
   end
 end
 
-# Migrate the database with each deployment
-after  'deploy:update_code', 'deploy:migrate'
 
 after 'deploy:update_code', 'deploy:symlink_shared'
+# Migrate the database with each deployment
+after  'deploy:symlink_shared', 'deploy:migrate'
 after "deploy:migrations", "deploy:restart_passenger"
 after "deploy:migrations", "deploy:cleanup"
