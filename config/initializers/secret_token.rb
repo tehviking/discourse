@@ -1,4 +1,5 @@
-
+require 'dotenv'
+Dotenv.load
 # Definitely change this when you deploy to production. Ours is replaced by jenkins.
 # This token is used to secure sessions, we don't mind shipping with one to ease test and debug,
 #  however, the stock one should never be used in production, people will be able to crack
