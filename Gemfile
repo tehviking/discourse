@@ -31,6 +31,7 @@ gem 'hiredis'
 gem 'dotenv'
 gem 'capistrano'
 gem 'rvm-capistrano'
+gem 'skylight'
 
 gem 'email_reply_parser'
 
