@@ -34,6 +34,7 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/.env #{release_path}/.env"
     run "ln -nfs #{shared_path}/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/redis.yml #{release_path}/config/redis.yml"
+    run "ln -nfs #{shared_path}/secret_token.rb #{release_path}/config/secret_token.rb"
   end
 
   # Tasks to start/stop/restart thin
